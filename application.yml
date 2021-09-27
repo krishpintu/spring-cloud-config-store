@@ -4,4 +4,10 @@ eureka:
       fetch-registry: true 
    instance:
     instance-id: ${spring.application.name}-${random.int}
-    hostname: localhost  
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
